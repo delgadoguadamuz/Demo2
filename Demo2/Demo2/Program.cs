@@ -72,20 +72,21 @@ namespace ConvertidorTemperatura
         
         static void Fahrenheit()
         {
+            double nueve = 5.0 /9.0;
+            
             Console.Clear();
 
-            Console.WriteLine("SUMA");
+
+            Console.WriteLine("Fahrenheit");
             Console.WriteLine("");
 
-            Console.WriteLine("Ingrese el primer valor: ");
-            int valor1 = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese el valor en Fahrenheit: ");
+            double valor1 = Int32.Parse(Console.ReadLine());
 
-            Console.WriteLine("Ingrese el segundo valor: ");
-            int valor2 = Int32.Parse(Console.ReadLine());
 
-            int resultado = valor1 + valor2;
+            double resultado = (valor1-32)*nueve;
 
-            Console.WriteLine("El resultado es: " + resultado);
+            Console.WriteLine("El resultado en Celcius" + resultado);
         }
 
         
